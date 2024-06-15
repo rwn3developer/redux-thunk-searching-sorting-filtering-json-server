@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": "2174",
+      "name": "mansi",
+      "email": "mansi@gmail.com",
+      "password": "1234",
+      "gender": "female",
+      "course": [
+        "html",
+        "css",
+        "bootstrap",
+        "js",
+        "reactjs",
+        "node js"
+      ],
+      "date": "2024-06-16",
+      "status": "active"
+    },
+    {
+      "id": "81d9",
+      "name": "axay",
+      "email": "axay@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "node js",
+        "python"
+      ],
+      "date": "2024-06-15",
+      "status": "deactive"
+    },
+    {
+      "id": "93bb",
+      "name": "ketan",
+      "email": "ketan@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "laravel",
+        "reactjs",
+        "node js"
+      ],
+      "date": "2024-06-13",
+      "status": "active"
+    },
+    {
+      "id": "c37a",
+      "name": "bhumi",
+      "email": "bhumi@gmail.com",
+      "password": "1234",
+      "gender": "female",
+      "course": [
+        "php",
+        "laravel",
+        "reactjs",
+        "node js"
+      ],
+      "date": "2024-06-07",
+      "status": "deactive"
+    }
+  ]
+}

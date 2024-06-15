@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addUser } from '../redux/action/userAction'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Add = () => {
-
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -23,13 +27,19 @@ const Add = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(name);
-        console.log(email);
-        console.log(password);
-        console.log(gender);
-        console.log(course);
-        console.log(date);
-        console.log(status);
+        let obj = {
+            name,email,password,gender,course,date,status
+        }
+        dispatch(addUser(obj))
+        alert("user add");
+        navigate('/');
+        setName("")
+        setEmail("")
+        setPassword("")
+        setCourse([])
+        setGender("")
+        setDate("")
+        setStatus("")
     }
     
 
@@ -37,8 +47,9 @@ const Add = () => {
         <div>
             <div className="container mt-5">
                 <div className="card">
-                    <div className="card-header">
-                        Featured
+                    <div className="card-header d-flex">
+                        <h5>Add User</h5>
+                        <Link to={`/`} className='btn btn-success btn-sm'>View User</Link>
                     </div>
                     <div className="card-body">
                         <form onSubmit={handleSubmit}>
@@ -59,13 +70,13 @@ const Add = () => {
                                     <div className="mb-3">
                                         <label className="form-label">Gender</label>
                                         <div className="form-check">
-                                            <input className="form-check-input" onChange={(e) => setGender(e.target.value)} value="male" type="radio" name="gender" />
+                                            <input className="form-check-input" onChange={(e) => setGender(e.target.value)} value="male" checked={gender === "male"} type="radio" name="gender" />
                                             <label className="form-check-label" htmlFor="male">
                                                 Male
                                             </label>
                                         </div>
                                         <div className="form-check">
-                                            <input className="form-check-input" onChange={(e) => setGender(e.target.value)} value="female" type="radio" name="gender" />
+                                            <input className="form-check-input" onChange={(e) => setGender(e.target.value)} value="female" checked={gender === "female"} type="radio" name="gender" />
                                             <label className="form-check-label" htmlFor="female">
                                                 Female
                                             </label>
@@ -82,7 +93,7 @@ const Add = () => {
                                                 return (
                                                     <div key={index}>
                                                         <div className="form-check">
-                                                            <input className="form-check-input" onChange={ (e) => handleCourseChanged(c,e.target.checked) } type="checkbox" />
+                                                            <input className="form-check-input" onChange={ (e) => handleCourseChanged(c,e.target.checked) } checked={course.includes(c)} type="checkbox" />
                                                             <label className="form-check-label" htmlFor="html">
                                                                 {c}
                                                             </label>
