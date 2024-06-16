@@ -1,62 +1,151 @@
 {
   "users": [
     {
-      "id": "2174",
-      "name": "mansi",
-      "email": "mansi@gmail.com",
-      "password": "1234",
-      "gender": "female",
-      "course": [
-        "html",
-        "css",
-        "bootstrap",
-        "js",
-        "reactjs",
-        "node js"
-      ],
-      "date": "2024-06-16",
-      "status": "active"
-    },
-    {
-      "id": "81d9",
-      "name": "axay",
-      "email": "axay@gmail.com",
-      "password": "1234",
-      "gender": "male",
-      "course": [
-        "node js",
-        "python"
-      ],
-      "date": "2024-06-15",
-      "status": "deactive"
-    },
-    {
       "id": "93bb",
       "name": "ketan",
       "email": "ketan@gmail.com",
       "password": "1234",
       "gender": "male",
       "course": [
-        "laravel",
         "reactjs",
-        "node js"
+        "node js",
+        "css",
+        "bootstrap",
+        "jQuery",
+        "html"
       ],
-      "date": "2024-06-13",
+      "date": "2024-06-14",
       "status": "active"
     },
     {
-      "id": "c37a",
-      "name": "bhumi",
-      "email": "bhumi@gmail.com",
+      "id": "6481",
+      "name": "manish",
+      "email": "manish@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "reactjs",
+        "node js",
+        "python"
+      ],
+      "date": "2024-06-01",
+      "status": "active"
+    },
+    {
+      "id": "f149",
+      "name": "kartik",
+      "email": "kartik@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "php",
+        "laravel"
+      ],
+      "date": "2024-06-01",
+      "status": "deactive"
+    },
+    {
+      "id": "3af4",
+      "name": "milan",
+      "email": "milan@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "html",
+        "css",
+        "bootstrap",
+        "js"
+      ],
+      "date": "2024-06-03",
+      "status": "deactive"
+    },
+    {
+      "id": "8fc7",
+      "name": "mansi",
+      "email": "mansi@gmail.com",
       "password": "1234",
       "gender": "female",
       "course": [
+        "js",
+        "jQuery",
         "php",
-        "laravel",
-        "reactjs",
-        "node js"
+        "laravel"
+      ],
+      "date": "2024-06-04",
+      "status": "active"
+    },
+    {
+      "id": "ad4c",
+      "name": "nikhil",
+      "email": "nikhil@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "html",
+        "css",
+        "bootstrap",
+        "js",
+        "jQuery",
+        "php",
+        "laravel"
+      ],
+      "date": "2024-06-05",
+      "status": "active"
+    },
+    {
+      "id": "dff9",
+      "name": "manisha",
+      "email": "manisha@gmail.com",
+      "password": "1234",
+      "gender": "female",
+      "course": [
+        "python"
       ],
       "date": "2024-06-07",
+      "status": "active"
+    },
+    {
+      "id": "f068",
+      "name": "akash",
+      "email": "akash@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "laravel",
+        "reactjs",
+        "php"
+      ],
+      "date": "2024-06-08",
+      "status": "deactive"
+    },
+    {
+      "id": "6945",
+      "name": "keyur",
+      "email": "akash@gmail.com",
+      "password": "1234",
+      "gender": "male",
+      "course": [
+        "js",
+        "node js",
+        "html",
+        "css",
+        "bootstrap"
+      ],
+      "date": "2024-06-09",
+      "status": "active"
+    },
+    {
+      "id": "80a6",
+      "name": "ketki",
+      "email": "ketki@gmail.com",
+      "password": "1234",
+      "gender": "female",
+      "course": [
+        "html",
+        "css",
+        "bootstrap"
+      ],
+      "date": "2024-06-11",
       "status": "deactive"
     }
   ]
