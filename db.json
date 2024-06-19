@@ -7,11 +7,6 @@
       "password": "1234",
       "gender": "male",
       "course": [
-        "reactjs",
-        "node js",
-        "css",
-        "bootstrap",
-        "jQuery",
         "html"
       ],
       "date": "2024-06-14",

@@ -72,6 +72,12 @@ const View = () => {
                                     <table className="table">
                                         <thead>
                                             <tr>
+                                                <th>
+                                                    <button className='btn btn-danger btn-sm'>Delete</button>
+                                                </th>
+                                                <th>
+                                                    <button className='btn btn-info btn-sm'>Edit</button>
+                                                </th>
                                                 <th scope="col">Srno</th>
                                                 <th scope="col">Name</th>
                                                 <th scope="col">Email</th>
@@ -87,6 +93,12 @@ const View = () => {
                                                 users.map((val, index) => {
                                                     return (
                                                         <tr key={val.id}>
+                                                            <td>
+                                                                <input type="checkbox" />
+                                                            </td>
+                                                            <td>
+                                                                <input type="checkbox" />
+                                                            </td>
                                                             <th scope="row">{++index}</th>
                                                             <td>{val.name}</td>
                                                             <td>{val.email}</td>
