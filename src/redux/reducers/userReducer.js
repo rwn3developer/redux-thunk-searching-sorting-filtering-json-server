@@ -55,19 +55,19 @@ const UserReducer = (state = initialState,action) => {
             error : null
         }
 
-        case 'statuswisefilter':
-            return{
+       
+
+        case 'filterrecord':
+            return {
                 ...state,
                 users : action.payload,
                 error : null
             }
 
-        case 'namewisefilter':
-            console.log(action.payload);
+        case 'filterrecorderr':
             return {
                 ...state,
-                users : action.payload,
-                error : null
+                error : action.payload
             }
 
     

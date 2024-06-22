@@ -81,12 +81,12 @@ export const FilterRecord = (status,name,sort) => {
                 filter.sort((a,b)=>a.name.toLowerCase() < b.name.toLowerCase() ? 1 : -1)
             }
             dispatch({
-               type : 'namewisefilter',
+               type : 'filterrecord',
                payload:filter
             })
         }catch(err){
             dispatch({
-                type : 'updateuserfailer',
+                type : 'filterrecorderr',
                 payload : err
             })
         }
